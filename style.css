@@ -1,0 +1,388 @@
+/* google-font-link */
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  /* color: rgb(46, 115, 245); */
+}
+
+/* navigation */
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.3px solid rgb(235, 235, 235);
+}
+nav {
+  line-height: normal;
+  position: -webkit-sticky;
+}
+.logo {
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo::first-letter {
+  font-size: 40px;
+  color: rgb(0, 102, 255);
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin: 10px;
+}
+.listitem {
+  top: 30%;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  text-decoration: none;
+  background-color: rgb(50, 100, 206);
+  outline: none;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  padding: 5px;
+  border-radius: 5px;
+}
+a:hover{
+  color:  black;
+  transition: 1s linear ease-in;
+}
+
+/* ---------------------------------------- */
+
+/* Home */
+
+.home {
+  height: 90vh;
+  display: flex;
+}
+.content {
+  position: absolute;
+  margin-left: 15px;
+  height: 90vh;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+
+}
+
+
+.home-h1 {
+  position: relative;
+  top: 20%;
+  font-size: 60px;
+  font-family: "Peddana", serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(53, 116, 187);
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.home-p {
+  position: relative;
+  top: 20%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  color: rgb(40, 92, 202);
+}
+.home-p:before{
+  content: "------ "    ;
+}
+.home-p::after{
+  content: "---------";
+}
+.home-p1{
+  position: relative;
+  top: 20%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  color: black;
+}
+.btn-home {
+  position: relative;
+  top: 25%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  text-decoration: none;
+  background-color: rgb(50, 100, 206);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-help{
+  position: relative;
+  top: 25%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 3px solid rgb(0, 102, 255);
+}
+.undraw-image {
+  height: 500px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  height: 90%;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
+ 
+}
+.image-logo {
+  position: relative;
+  height: 500px;
+  width: 700px;
+  object-fit: contain;
+ 
+}
+
+/* ---------------------------------- */
+
+/* About */
+
+.about {
+  height: 90vh;
+  display: flex;
+}
+
+.image-about {
+  position: absolute;
+  left: 0%;
+  height: 90vh;
+}
+.photo {
+  position: relative;
+  height: 500px;
+  width: 700px;
+  object-fit: contain;
+}
+
+.about-content {
+  position: absolute;
+  left: 50%;
+  height: 90vh;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  color: rgb(60, 89, 143);
+  position: relative;
+  top: 20%;
+}
+.about-p {
+  color: rgb(47, 47, 48);
+  position: relative;
+  top: 25%;
+  text-align: start;
+  padding: 10px 20px;
+}
+
+.btn-about {
+  position: relative;
+  top: 30%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  text-decoration: none;
+  background-color: rgb(50, 100, 206);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* pricetag section */
+
+.price{
+   display: flex;
+   z-index: -2;
+   margin: 0px 200px 0px 200px 
+}
+.monthly-fee{
+  position: relative;
+  top: 30%;
+  height: 90vh;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  border: 2px solid black;
+
+
+}
+.year-fee{
+  position: relative;
+  top: 30%;
+  height: 90vh;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  border: 2px solid black;
+
+}
+
+table {
+  font-family: "Peddana", serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(80, 116, 224);
+}
+tr:nth-child(odd){
+  background-color: rgb(124, 149, 223);
+}
+
+/* contact section */
+
+form{
+  height: 90vh;
+  justify-content: center;
+  text-align: end;
+  border: 1px solid rgb(61, 48, 48);
+  background-image: url('./images/danielle.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form-h1{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Peddana", serif;
+  text-transform: uppercase;
+  color: rgb(7, 2, 255);
+  margin:  auto;
+}
+.form-p{
+  color: rgb(233, 175, 175);
+  font-size: 20px;
+  position: relative;
+  right: 18%;
+  text-transform: capitalize;
+}
+
+input{
+  position: relative;
+  top: 5%;
+  right: 15%;
+  width:400px;
+  height: 40px;
+  outline: none;
+  letter-spacing: 2px;
+  border: none;
+  justify-content: start;
+  align-items: flex-start;
+  border-radius: 5px;
+margin: 5px;
+text-align: center;
+}
+textarea{
+  position: relative;
+  margin: 30px;
+  right: 5%;
+  width:400px;
+}
+
+.btn-contact{
+  position: relative;
+  top: 10%;
+  right: 25%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Peddana", serif;
+  text-decoration: none;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 20px;
+}
+.btn-contact:hover{
+  background-color: rgb(253, 53, 27);
+  color: black;
+  transition: linear 2s ease-out;
+}
+
+
+/*  footer-section */
+footer {
+  display: block;
+  background-color: royalblue;
+  border-top: 0.1px solid rgb(218, 218, 218);
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.footer-p {
+  text-transform: capitalize;
+}
+
+.icons {
+  color: rgb(0, 0, 0);
+  font-family: "Peddana", serif;
+}
